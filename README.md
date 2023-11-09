@@ -24,13 +24,16 @@ The purpose of this analysis is to document the optimisation of a neural network
 Data processing: 
 1.	In reference to the python script seen below, the target variable is ‘IS_SUCCESSFUL’ column.
 2.	In reference to the python script seen below, the feature variables are ‘APPLICATION’, ‘CLASSIFICATION’ and ‘NAME’ columns.
+   
 ![image](https://github.com/teacher-analyst/deep-learning-challenge/assets/130710065/1e39a9a2-1170-4ec0-abea-efdaf3ef42bc)
-3. The variable removed from the input data is the EIN column
+
+4. The variable removed from the input data is the EIN column
+5. Initially, before optimising the model, I had chosen two hidden layers with 8 neurons in the first layer and 5 neurons in the second layer. The two functions used were relu for the hidden layers and sigmoid for the outer layer.
+   
 <img width="629" alt="image" src="https://github.com/teacher-analyst/deep-learning-challenge/assets/130710065/08a54bb2-c29b-4368-baa1-cd1b7f4b20e1">
 
-4. Initially, before optimising the model, I had chosen two hidden layers with 8 neurons in the first layer and 5 neurons in the second layer. The two functions used were relu for the hidden layers and sigmoid for the outer layer.
-5. I fell short of the target model performance, achieving an accuracy of only 72%. This is an improvement on the initial model which acheived 61% accuracy.
-6. When preprocessing the data, I only removed the ‘EIN’ column and left the NAME column to use as a feature, there were three features in total. Then, I increased the number of Epochs from 100 to 150. In the first attempt at model optimisation, I increased the number of features. In the second attempt, I increased the number of neurons in each hidden layer and in the third attempt, I increased the number of hidden layers from two to three. 
+6. I fell short of the target model performance, achieving an accuracy of only 72%. This is an improvement on the initial model which acheived 61% accuracy.
+7. When preprocessing the data, I only removed the ‘EIN’ column and left the NAME column to use as a feature, there were three features in total. Then, I increased the number of Epochs from 100 to 150. In the first attempt at model optimisation, I increased the number of features. In the second attempt, I increased the number of neurons in each hidden layer and in the third attempt, I increased the number of hidden layers from two to three. 
   
 ### Summary 
 The only change that seemed to have a significant impact on model performance was the addition of a third feature i.e. NAME. The addition of a feature increased the model accuracy from 61% to 72%. 
